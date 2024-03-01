@@ -1,0 +1,11 @@
+<resources>
+    <!-- Define your custom green color -->
+    <color name="green">#00FF00</color>
+
+    <!-- Modify the default AppTheme -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Change the background color to green -->
+        <item name="android:windowBackground">@color/green</item>
+        <!-- You can customize other attributes as needed -->
+    </style>
+</resources>

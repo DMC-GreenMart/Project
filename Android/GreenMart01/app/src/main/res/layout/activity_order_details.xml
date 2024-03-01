@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="80dp"
+    android:padding="16dp"
+    tools:context=".activities.OrderDetailsActivity">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageProduct"
+            android:layout_width="300dp"
+            android:layout_height="250dp"
+            android:src="@drawable/image1" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:text="Product Name"
+        android:id="@+id/textProductName"
+        android:textSize="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:text="Order Date"
+        android:id="@+id/textOrderDate"
+        android:textSize="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/textStatus"
+        android:text="Status :"
+        android:textSize="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+    <RatingBar
+        android:layout_marginTop="10dp"
+        android:id="@+id/ratingBar"
+        android:stepSize="1"
+        android:progressTint="@android:color/holo_orange_light"
+        android:numStars="5"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:onClick="addRating"
+            android:id="@+id/btnAddEdit"
+            android:text="Add Rating"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_marginTop="10dp"
+            android:onClick="cancel"
+            android:id="@+id/btnCancel"
+            android:layout_marginLeft="185dp"
+            android:text="Cancel"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>

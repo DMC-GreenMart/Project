@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Address Dropdown -->
+    <ListView
+        android:id="@+id/address_listview"
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_height="200dp" />
+
+
+    <!-- Payment Method Radio Buttons -->
+    <RadioGroup
+        android:id="@+id/payment_method_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/address_listview"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/cod_radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="Cash on Delivery" />
+
+        <RadioButton
+            android:id="@+id/credit_card_radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Credit Card" />
+
+    </RadioGroup>
+
+    <!-- Total Amount TextView -->
+    <TextView
+        android:id="@+id/total_amount_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Amount: $100"
+    android:layout_below="@id/payment_method_radio_group"
+    android:layout_marginTop="16dp"
+    android:layout_centerHorizontal="true" />
+
+    <!-- Checkout Button -->
+    <Button
+        android:id="@+id/checkout_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/total_amount_textview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Checkout" />
+
+    <Button
+        android:id="@+id/add_address_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkout_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Add Address" />
+
+</RelativeLayout>

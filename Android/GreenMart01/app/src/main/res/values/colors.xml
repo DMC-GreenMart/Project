@@ -1,0 +1,6 @@
+<resources>
+    <color name="greenPrimary">#4CAF50</color>
+    <color name="greenDark">#388E3C</color>
+    <color name="greenLight">#C8E6C9</color>
+    <!-- Add more shades of green as needed -->
+</resources>
